@@ -1,0 +1,78 @@
+.container {
+  margin-top: 100px;
+}
+.account_address {
+  font-size: small;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#clockdiv {
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #9cd6f7;
+  display: inline-block;
+}
+
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  display: inline-block;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.countdown {
+  background-color: rgb(165, 248, 116);
+}
+
+textarea:focus,
+input:focus,
+input[type]:focus,
+.uneditable-input:focus {
+  border-color: rgba(214, 55, 235, 0.8);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+    0 0 8px rgba(86, 115, 241, 0.6);
+  outline: 0 none;
+}
+
+.announcement-top-bar {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.announcement-top-bar p {
+  margin: 0px;
+}
+
+.announcement-top-bar.alert-dismissible .close {
+  top: 50%;
+  transform: translateY(-55%);
+}
