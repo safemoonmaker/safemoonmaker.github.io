@@ -5,6 +5,11 @@
   font-size: small;
 }
 
+.hint {
+  font-size: smaller;
+  color: gray;
+}
+
 .center {
   display: flex;
   justify-content: center;
