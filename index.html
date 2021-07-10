@@ -182,38 +182,41 @@
               <div class="basicToken my-5">
                 <form>
                   <div class="form-group row">
-                    <label class="col-sm-3 col-form-lable">Token name</label>
+                    <label class="col-sm-3 col-form-lable">Token name *</label>
                     <div class="col-sm-9">
-                      <input
-                        required
-                        class="token_name"
-                        type="text"
-                        placeholder="KingMoon, RocketMar etc..."
-                      />
+                      <input class="token_name" type="text" placeholder="" />
+                      <p class="hint">Choose a name for your token.</p>
                     </div>
                   </div>
                   <br />
                   <div class="form-group row">
-                    <label class="col-sm-3 col-form-lable">Token symbol</label>
+                    <label class="col-sm-3 col-form-lable"
+                      >Token symbol *</label
+                    >
                     <div class="col-sm-9">
-                      <input
-                        class="token_symbol"
-                        type="text"
-                        placeholder="ROCKET, MOON etc..."
-                      />
+                      <input class="token_symbol" type="text" placeholder="" />
+                      <p class="hint">
+                        Choose a symbol for your token (usually 3-5 chars).
+                      </p>
                     </div>
                   </div>
                   <br />
                   <div class="form-group row">
-                    <label class="col-sm-3 col-form-lable">Token supply</label>
+                    <label class="col-sm-3 col-form-lable"
+                      >Total supply *</label
+                    >
                     <div class="col-sm-9">
                       <input
                         class="token_supply"
                         type="number"
                         min="1"
                         step="100000"
-                        placeholder="1000, 1000000 etc.."
+                        placeholder=""
                       />
+                      <p class="hint">
+                        Insert the initial number of tokens available. Will be
+                        put in your account.
+                      </p>
                     </div>
                   </div>
                   <div class="text-center mt-5">
@@ -234,69 +237,89 @@
               <div class="safemoonTwin my-5">
                 <form>
                   <div class="form-group row">
-                    <label class="col-sm-3 col-form-lable">Token name</label>
+                    <label class="col-sm-3 col-form-lable">Token name *</label>
                     <div class="col-sm-9">
                       <input
                         class="token_name1"
                         type="text"
-                        placeholder="KingMoon, RocketMar etc..."
+                        placeholder="SafeMoon"
                       />
+                      <p class="hint">Choose a name for your token.</p>
                     </div>
                   </div>
                   <br />
                   <div class="form-group row">
-                    <label class="col-sm-3 col-form-lable">Token symbol</label>
+                    <label class="col-sm-3 col-form-lable"
+                      >Token symbol *</label
+                    >
                     <div class="col-sm-9">
                       <input
+                        title="Enter token symbol "
                         class="token_symbol1"
                         type="text"
-                        placeholder="ROCKET, MOON etc..."
+                        placeholder="SAFEMOON"
                       />
+                      <p class="hint">
+                        Choose a symbol for your token (usually 3-5 chars).
+                      </p>
                     </div>
                   </div>
                   <br />
                   <div class="form-group row">
-                    <label class="col-sm-3 col-form-lable">Decimals</label>
+                    <label class="col-sm-3 col-form-lable">Decimals *</label>
                     <div class="col-sm-9">
                       <input
                         class="decimals1"
                         type="number"
                         min="1"
                         step="1"
-                        placeholder="18 etc.."
+                        placeholder="18"
                       />
+                      <p class="hint">
+                        Insert the decimal precision of your token. If you don't
+                        know what to insert, use 18.
+                      </p>
                     </div>
                   </div>
                   <br />
                   <div class="form-group row">
-                    <label class="col-sm-3 col-form-lable">Token supply</label>
+                    <label class="col-sm-3 col-form-lable"
+                      >Total supply *</label
+                    >
                     <div class="col-sm-9">
                       <input
                         class="token_supply1"
                         type="number"
                         min="1"
                         step="100000"
-                        placeholder="1000, 1000000 etc.."
+                        placeholder="1000000000000000"
                       />
+                      <p class="hint">
+                        Insert the initial number of tokens available. Will be
+                        put in your account.
+                      </p>
                     </div>
                   </div>
                   <br />
                   <div class="form-group row">
-                    <label class="col-sm-3 col-form-lable">Tax Fees</label>
+                    <label class="col-sm-3 col-form-lable">Tax Fees % *</label>
                     <div class="col-sm-9">
                       <input
                         class="tax_fees1"
                         type="number"
                         min="0"
                         step="1"
-                        placeholder="5, 10 etc.."
+                        placeholder="5"
                       />
+                      <p class="hint">
+                        Transaction fee in % to generate yield.
+                      </p>
                     </div>
                   </div>
                   <br />
                   <div class="form-group row">
                     <label class="col-sm-3 col-form-lable"
-                      >Liquidity Fees</label
+                      >Liquidity Fees % *</label
                     >
                     <div class="col-sm-9">
                       <input
@@ -304,14 +327,17 @@
                         type="number"
                         min="0"
                         step="1"
-                        placeholder="5, 10 etc.."
+                        placeholder="5"
                       />
+                      <p class="hint">
+                        Transaction fee in % to generate liquidity.
+                      </p>
                     </div>
                   </div>
                   <br />
                   <div class="form-group row">
                     <label class="col-sm-3 col-form-lable"
-                      >Max Transfer %</label
+                      >Max Transfer % *</label
                     >
                     <div class="col-sm-9">
                       <input
@@ -319,8 +345,11 @@
                         type="number"
                         min="0"
                         step="1"
-                        placeholder="5, 10 etc.."
+                        placeholder="1"
                       />
+                      <p class="hint">
+                        Maximum % of total supply allowed for each transaction.
+                      </p>
                     </div>
                   </div>
                   <div class="text-center mt-5">
