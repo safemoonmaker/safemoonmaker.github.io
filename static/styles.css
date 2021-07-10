@@ -10,6 +10,11 @@
   color: gray;
 }
 
+.hint1 {
+  font-size: smaller;
+  color: blue;
+}
+
 .center {
   display: flex;
   justify-content: center;
