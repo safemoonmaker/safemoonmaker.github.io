@@ -110,7 +110,7 @@
     </div> -->
     <div class="container col-xxl-8 px-4 py-0">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-0">
-        <div class="col-lg-6 d-flex justify-content-center">
+        <div class="col-lg-6 d-flex justify-content-center introMedia">
            <video
             autoplay
             loop
@@ -124,6 +124,11 @@
             <source src="/static/intro3.mp4" type="video/mp4" />
           </video>
         </div>
+        <script>
+          if (navigator.userAgent.indexOf("Safari") != -1) {
+            $(".introMedia").html('<img width="500" height="500" class="d-block mx-lg-auto img-fluid" src="/static/intro3.gif">')
+          }
+        </script>
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold lh-1 mb-3">
             Create your BEP20 token in SECONDS 💨 for FREE 🤗
