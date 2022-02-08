@@ -18,26 +18,24 @@
   <script type="module" src="/static/misc.js"></script>
   <!-- <script type="module" src="/static/test-module.js"></script> -->
 
-
-
-
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/web3js-cdn@1.3.0/web3.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
 
   <script src="/lib/bignumber.js"></script>
   <link rel="stylesheet" href="/static/styles.css" />
   <meta name="description"
-    content="Create a BEP20 Token in less than a minute with the new Smart Contract Generator for Binance Smart Chain. No login. No setup. No coding required." />
+    content="Create a BEP20 Token in less than a minute with BEP20 token generator for FREE on Binance Smart Chain. No login. No setup. No coding required." />
   <meta property="twitter:title" content="BEP20 Token Generator | Create BEP20 Token for FREE on Binance Smart Chain" />
   <meta property="og:title" content="BEP20 Token Generator | Create BEP20 Token for FREE on Binance Smart Chain" />
   <meta property="twitter:description"
-    content="Create a BEP20 Token in less than a minute with the new Smart Contract Generator for Binance Smart Chain. No login. No setup. No coding required." />
+    content="Create a BEP20 Token in less than a minute with BEP20 token generator for FREE on Binance Smart Chain. No login. No setup. No coding required." />
   <meta property="og:description"
-    content="Create a BEP20 Token in less than a minute with the new Smart Contract Generator for Binance Smart Chain. No login. No setup. No coding required." />
+    content="Create a BEP20 Token in less than a minute with BEP20 token generator for FREE on Binance Smart Chain. No login. No setup. No coding required." />
   <meta property="og:url" content="https://safemoonmaker.github.io/" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://safemoonmaker.github.io/static/bep20-token-generator.png" />
@@ -47,11 +45,10 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7KB79ESXBB"></script>
   <script>
-    if (!window.location.toString().includes("127.0.0.1") && !window.location.toString().includes("localhost")) {
+    if (!window.location.toString().includes("127.0.0.1") && !window.location.toString().includes("localhost") && !window.location.toString().includes("192.168.")) {
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
-
       gtag('config', 'G-7KB79ESXBB');
     } else {
       console.log("development mode")
@@ -64,785 +61,40 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="/static/media/safemoonmaker.png" alt="" height="30" /></a>
-      <h2><span class="account_address"></span></h2>
-      <button class="connectWallet btn btn-primary btn-sm px-4 me-md-2">
-        Connect Wallet
-      </button>
     </div>
   </nav>
 
-  <p style="background-color: wheat">
-    🕶️ <strong>Requirements =</strong> use a supported desktop browser (<a
-      href="https://www.google.com/chrome/">Chrome</a>, <a
-      href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>, <a href="https://brave.com/">Brave</a>, <a
-      href="https://www.microsoft.com/en-us/edge">Edge</a> ) <strong>+</strong>
-    install <a href="https://metamask.io/download.html">Metamask</a>
-    </a>browser wallet
-    <strong>+</strong> connect Metamask to
-    <a href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain"> Binance Smart
-      Chain</a>
-  </p>
-  <p class="d-flex justify-content-around align-items-center">
-    <a href="https://t.me/TokenGeneratorBSC" style="color: red"> <img src="/static/media/telegram.png" height="35"
-        alt=""></a>
-
-    <a hidden href="#buy_token" class="buy_now" style="color:red"> <strong>🔥PRESALE</strong> </a>
-    <a hidden href="" class="buy_now"><img src="/static/media/stone.png" alt="" height="35">$10.25</a>
-  </p>
-
-
-  <!-- <div
-      class="
-        alert alert-primary alert-dismissible
-        fade
-        show
-        announcement-top-bar
-      "
-      role="alert"
-    >
-      <p class="d-none d-md-block">
-        🚀 Invest in SafeMoonMaker tokens.
-        <a href="#buy_token">Click here</a>
-      </p>
-      <p class="d-block d-md-none">
-        🚀 Invest in SafeMoonMaker tokens.
-        <a href="#buy_token">Click here</a>
-      </p>
-    </div> -->
-  <div class="container col-xxl-8 px-4 py-0">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-0">
-      <div class="col-lg-6 d-flex justify-content-center introMedia">
-        <video autoplay loop muted playsinline width="500" height="500" class="d-block mx-lg-auto img-fluid">
-          <source src="/static/media/intro3.webm" type="video/webm" />
-          <source src="/static/media/intro3.mp4" type="video/mp4" />
-        </video>
+  <div class="container col-xxl-8 px-4 hero">
+    <div class="row flex-lg-row-reverse align-items-center g-5">
+      <div class="col-10 col-sm-8 col-lg-6 container mt-5">
+        <img src="static/media/intro3.gif" class="enter-block d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+          loading="lazy" width="700" height="500">
       </div>
-
-
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3">
-          Create your BEP20 token in SECONDS 💨 for FREE 🤗
-        </h1>
-        <p class="lead"></p>
+        <h1 class="display-5 fw-bold lh-1 mb-3"> Create BEP20 token for free</h1>
+        <p class="lead">Our mission is to make token creation easy and acessible for everyone. You don't need to have
+          coding experiences. Anyone can generate BEP20 token for free.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
 
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="basic-tab" data-bs-toggle="tab" data-bs-target="#basic" type="button"
-              role="tab" aria-controls="basic" aria-selected="true">
-              Standard
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="safemoon-tab" data-bs-toggle="tab" data-bs-target="#safemoon" type="button"
-              role="tab" aria-controls="safemoon" aria-selected="false">
-              SafeMoon
-            </button>
-          </li>
-          <li hidden class="nav-item" role="presentation">
-            <button class="nav-link" id="safemoonkiller-tab" data-bs-toggle="tab" data-bs-target="#safemoonkiller"
-              type="button" role="tab" aria-controls="safemoonkiller" aria-selected="false">
-              SafeMoon Killer
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="liquiditygenerator-tab" data-bs-toggle="tab"
-              data-bs-target="#liquiditygenerator" type="button" role="tab" aria-controls="liquiditygenerator"
-              aria-selected="false">
-              Liquidity Generator
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="frictionlessyield-tab" data-bs-toggle="tab" data-bs-target="#frictionlessyield"
-              type="button" role="tab" aria-controls="frictionlessyield" aria-selected="false">
-              Frictionless Yield
-            </button>
-          </li>
+          <button type="button" onclick="gtag('event','open_builder');location.href='/bep20-token-generator';"
+            class="btn btn-primary btn-lg px-4 me-md-2">Create Token</button>
 
+          <button type="button" onclick="gtag('event','learn_more');location.href='#features'"
+            class="btn btn-outline-secondary btn-lg px-4">Learn
+            More</button>
 
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="rewardtoken-tab" data-bs-toggle="tab" data-bs-target="#rewardtoken"
-              type="button" role="tab" aria-controls="rewardtoken" aria-selected="false">
-              Reward Token <span class="badge bg-danger">Hot🔥</span>
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link btn btn-primary" id="customized-tab" data-bs-toggle="tab"
-              data-bs-target="#customized" type="button" role="tab" aria-controls="customized" aria-selected="false">
-              Others <span class="badge bg-info">📞</span>
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="basic" role="tabpanel" aria-labelledby="home-tab">
-            <div class="basicToken my-5">
-              <form>
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Token name *</label>
-                  <div class="col-sm-9">
-                    <input class="token_name" type="text" placeholder="" required />
-                    <p class="hint">Choose a name for your token.</p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Token symbol *</label>
-                  <div class="col-sm-9">
-                    <input class="token_symbol" type="text" placeholder="" />
-                    <p class="hint">
-                      Choose a symbol for your token (usually 3-5 chars).
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Total supply *</label>
-                  <div class="col-sm-9">
-                    <input class="token_supply" type="number" min="1" step="100000" placeholder="1000000" />
-                    <p class="hint">
-                      Insert the initial number of tokens available. Will be
-                      put in your account.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Decimals *</label>
-                  <div class="col-sm-9">
-                    <input disabled class="decimals" type="number" placeholder="18" />
-                    <p class="hint">
-                      Insert the decimal precision of your token.
-                    </p>
-                  </div>
-                </div>
-
-              </form>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="safemoon" role="tabpanel" aria-labelledby="safemoon-tab">
-            <div class="safemoonTwin my-5">
-              <form>
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Token name *</label>
-                  <div class="col-sm-9">
-                    <input class="token_name" type="text" placeholder="" />
-                    <p class="hint">Choose a name for your token.</p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Token symbol *</label>
-                  <div class="col-sm-9">
-                    <input title="Enter token symbol " class="token_symbol" type="text" placeholder="" />
-                    <p class="hint">
-                      Choose a symbol for your token (usually 3-5 chars).
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Decimals *</label>
-                  <div class="col-sm-9">
-                    <input class="decimals" type="number" min="1" step="1" placeholder="9" disabled />
-                    <p class="hint">
-                      Insert the decimal precision of your token.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Total supply *</label>
-                  <div class="col-sm-9">
-                    <input class="token_supply" type="number" min="1" step="100000" placeholder="1000000000000000" />
-                    <p class="hint">
-                      Insert the initial number of tokens available. Will be
-                      put in your account.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Tax Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="tax_fees" type="number" min="0" step="1" placeholder="5" />
-                    <p class="hint">
-                      Transaction fee in % to generate yield.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Liquidity Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="liquidity_fees" type="number" min="0" step="1" placeholder="5" />
-                    <p class="hint">
-                      Transaction fee in % to generate liquidity.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row" style="display: none;">
-                  <label class="col-sm-3 col-form-lable">Max Transfer % *</label>
-                  <div class="col-sm-9">
-                    <input value="100" class="max_tx_percent1" type="number" min="0" step="1" placeholder="1" />
-                    <p class="hint">
-                      Maximum % of total supply allowed for each transaction.
-                    </p>
-                  </div>
-                </div>
-                <p class="hint1">
-                  <strong>Note:</strong> If you want more functions,
-                  <a href="https://t.me/TokenGeneratorBSC">contact us.</a>
-                  👈
-                </p>
-
-              </form>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="safemoonkiller" role="tabpanel" aria-labelledby="safemoonkiller-tab">
-            <div class="safemoonKiller my-5">
-              <form>
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Token name *</label>
-                  <div class="col-sm-9">
-                    <input class="token_name" type="text" placeholder="" />
-                    <p class="hint">Choose a name for your token.</p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Token symbol *</label>
-                  <div class="col-sm-9">
-                    <input title="Enter token symbol " class="token_symbol" type="text" placeholder="" />
-                    <p class="hint">
-                      Choose a symbol for your token (usually 3-5 chars).
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Decimals *</label>
-                  <div class="col-sm-9">
-                    <input class="decimals" type="number" min="1" step="1" placeholder="18" />
-                    <p class="hint">
-                      Insert the decimal precision of your token. If you don't
-                      know what to insert, use 18.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Total supply *</label>
-                  <div class="col-sm-9">
-                    <input class="total_supply" type="number" min="1" step="100000" placeholder="1000000000000000" />
-                    <p class="hint">
-                      Insert the initial number of tokens available. Will be
-                      put in your account.
-                    </p>
-                  </div>
-                </div>
-
-                <br />
-                <div class="form-group row" style="display: none;">
-                  <label class="col-sm-3 col-form-lable">Max Transfer % *</label>
-                  <div class="col-sm-9">
-                    <input value="100" class="max_tx_percent" type="number" min="0" step="1" placeholder="1" />
-                    <p class="hint">
-                      Maximum % of total supply allowed for each transaction.
-                    </p>
-                  </div>
-                </div>
-                <br />
-
-                <p><strong>Marketing Wallet *</strong> </p>
-
-
-                <div class="row">
-                  <input class="marketing_wallet" type="text" placeholder="" />
-                  <p class="hint">
-                    Marketing tax will be sent to marketing wallet.
-                  </p>
-                </div>
-                <br>
-                <p><strong>Sell Tax:</strong> </p>
-                <br>
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Tax Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="tax_fees" type="number" min="0" step="1" placeholder="5" />
-                    <p class="hint">
-                      Transaction fee in % to generate yield.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Liquidity Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="liquidity_fees" type="number" min="0" step="1" placeholder="5" />
-                    <p class="hint">
-                      Transaction fee in % to generate liquidity.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Marketing Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="marketing_fees" type="number" min="0" step="1" placeholder="5" />
-                    <p class="hint">
-                      Transaction fee in % to generate marketing budget.
-                    </p>
-                  </div>
-                </div>
-                <br>
-                <p><strong>Buy Tax:</strong> </p>
-                <br>
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Tax Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="tax_fees1" type="number" min="0" step="1" placeholder="5" />
-                    <p class="hint">
-                      Transaction fee in % to generate yield.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Liquidity Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="liquidity_fees1" type="number" min="0" step="1" placeholder="5" />
-                    <p class="hint">
-                      Transaction fee in % to generate liquidity.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Marketing Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="marketing_fees1" type="number" min="0" step="1" placeholder="5" />
-                    <p class="hint">
-                      Transaction fee in % to generate marketing budget.
-                    </p>
-                  </div>
-                </div>
-
-                <p class="hint1">
-                  <strong>Note:</strong> If you want more functions,
-                  <a href="https://t.me/TokenGeneratorBSC">contact us.</a>
-                  👈
-                </p>
-
-              </form>
-            </div>
-          </div>
-
-          <div class="tab-pane fade" id="liquiditygenerator" role="tabpanel" aria-labelledby="liquiditygenerator-tab">
-            <div class="liquiditygenerator my-5">
-              <form>
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Token name *</label>
-                  <div class="col-sm-9">
-                    <input class="token_name" type="text" placeholder="" />
-                    <p class="hint">Choose a name for your token.</p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Token symbol *</label>
-                  <div class="col-sm-9">
-                    <input title="Enter token symbol " class="token_symbol" type="text" placeholder="" />
-                    <p class="hint">
-                      Choose a symbol for your token (usually 3-5 chars).
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Decimals *</label>
-                  <div class="col-sm-9">
-                    <input class="decimals" type="number" min="1" step="1" placeholder="9" disabled />
-                    <p class="hint">
-                      Insert the decimal precision of your token.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Total supply *</label>
-                  <div class="col-sm-9">
-                    <input class="token_supply" type="number" min="1" step="100000" placeholder="1000000000000000" />
-                    <p class="hint">
-                      Insert the initial number of tokens available. Will be
-                      put in your account.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Liquidity Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="liquidity_fees" type="number" min="0" step="1" placeholder="5" />
-                    <p class="hint">
-                      Transaction fee in % to generate liquidity.
-                    </p>
-                  </div>
-                </div>
-                <br />
-
-                <p class="hint1">
-                  <strong>Note:</strong> If you want more functions,
-                  <a href="https://t.me/TokenGeneratorBSC">contact us.</a>
-                  👈
-                </p>
-
-              </form>
-            </div>
-
-          </div>
-          <div class="tab-pane fade" id="frictionlessyield" role="tabpanel" aria-labelledby="frictionlessyield-tab">
-            <div class="frictionlessyield my-5">
-              <form>
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Token name *</label>
-                  <div class="col-sm-9">
-                    <input class="token_name" type="text" placeholder="" />
-                    <p class="hint">Choose a name for your token.</p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Token symbol *</label>
-                  <div class="col-sm-9">
-                    <input title="Enter token symbol " class="token_symbol" type="text" placeholder="" />
-                    <p class="hint">
-                      Choose a symbol for your token (usually 3-5 chars).
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Decimals *</label>
-                  <div class="col-sm-9">
-                    <input class="decimals" type="number" min="1" step="1" placeholder="9" disabled />
-                    <p class="hint">
-                      Insert the decimal precision of your token.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Total supply *</label>
-                  <div class="col-sm-9">
-                    <input class="token_supply" type="number" min="1" step="100000" placeholder="1000000000000000" />
-                    <p class="hint">
-                      Insert the initial number of tokens available. Will be
-                      put in your account.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Tax Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="tax_fees" type="number" min="0" step="1" placeholder="5" />
-                    <p class="hint">
-                      Transaction fee in % to generate yield.
-                    </p>
-                  </div>
-                </div>
-                <br />
-
-
-                <p class="hint1">
-                  <strong>Note:</strong> If you want more functions,
-                  <a href="https://t.me/TokenGeneratorBSC">contact us.</a>
-                  👈
-                </p>
-
-              </form>
-            </div>
-          </div>
-
-          <div class="tab-pane fade" id="rewardtoken" role="tabpanel" aria-labelledby="rewardtoken-tab">
-            <div class="rewardToken my-5">
-              <form>
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Token Reward *</label>
-                  <div class="col-sm-9">
-                    <select class="form-select reward_token" aria-label="Default select example">
-                      <option value="0" selected>CAKE</option>
-                      <!-- <option value="1">ETH</option> -->
-                      <!-- <option value="2">BTC</option> -->
-                      <option value="3">BNB</option>
-                      <option value="4">BUSD</option>
-                      <!-- <option value="5">DOGE</option> -->
-                      <!-- <option value="6">ADA</option> -->
-                    </select>
-                    <p class="hint">Select reward token to be distributed among holders.</p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Token name *</label>
-                  <div class="col-sm-9">
-                    <input class="token_name" type="text" placeholder="" />
-                    <p class="hint">Choose a name for your token.</p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Token symbol *</label>
-                  <div class="col-sm-9">
-                    <input title="Enter token symbol " class="token_symbol" type="text" placeholder="" />
-                    <p class="hint">
-                      Choose a symbol for your token (usually 3-5 chars).
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Decimals *</label>
-                  <div class="col-sm-9">
-                    <input class="decimals" type="number" min="1" step="1" placeholder="18" />
-                    <p class="hint">
-                      Insert the decimal precision of your token. If you don't
-                      know what to insert, use 18.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Total supply *</label>
-                  <div class="col-sm-9">
-                    <input class="token_supply" type="number" min="1" step="100000" placeholder="1000000000000000" />
-                    <p class="hint">
-                      Insert the initial number of tokens available. Will be
-                      put in your account.
-                    </p>
-                  </div>
-                </div>
-
-                <br />
-                <div class="form-group row" style="display: none;">
-                  <label class="col-sm-3 col-form-lable">Max Transfer % *</label>
-                  <div class="col-sm-9">
-                    <input value="100" class="max_tx_percent" type="number" min="0" step="1" placeholder="1" />
-                    <p class="hint">
-                      Maximum % of total supply allowed for each transaction.
-                    </p>
-                  </div>
-                </div>
-                <br />
-
-                <p><strong>Marketing Wallet *</strong> </p>
-
-
-                <div class="row">
-                  <input class="marketing_wallet" type="text" placeholder="" />
-                  <p class="hint">
-                    Marketing tax will be sent to marketing wallet.
-                  </p>
-                </div>
-                <br>
-                <p><strong>Tax:</strong> </p>
-                <br>
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Reward Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="reward_fees" type="number" min="0" step="1" placeholder="7" />
-                    <p class="hint">
-                      Transaction fee in % to pay dividend to holders.
-                    </p>
-                  </div>
-                </div>
-
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Liquidity Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="liquidity_fees" type="number" min="0" step="1" placeholder="2" />
-                    <p class="hint">
-                      Transaction fee in % to generate liquidity.
-                    </p>
-                  </div>
-                </div>
-                <br />
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Marketing Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="marketing_fees" type="number" min="0" step="1" placeholder="3" />
-                    <p class="hint">
-                      Transaction fee in % to generate marketing budget.
-                    </p>
-                  </div>
-                </div>
-                <br>
-                <p><strong>Extra Sell Tax:</strong> </p>
-                <br>
-                <div class="form-group row">
-                  <label class="col-sm-3 col-form-lable">Tax Fees % *</label>
-                  <div class="col-sm-9">
-                    <input class="tax_fees_extra" type="number" min="0" step="1" placeholder="1" />
-                    <p class="hint">
-                      Extra fees will be applied to sell transaction.
-                    </p>
-                  </div>
-                </div>
-                <br />
-
-                <p class="hint1">
-                  <strong>Note:</strong> If you want more functions,
-                  <a href="https://t.me/TokenGeneratorBSC">contact us.</a>
-                  👈
-                </p>
-
-              </form>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="customized" role="tabpanel" aria-labelledby="contact-tab">
-            <div class="customizedToken row my-3">
-
-              <ul>
-                <li class="mt-2">Add more features 🏆 ✅</li>
-                <li class="mt-2">Tailored for your project 🥇 ✅</li>
-                <li class="mt-2">Great expertise in crypto/blockchain tech 👨‍💻 ✅</li>
-                <li class="mt-2">Quick development time 🚀 ✅</li>
-                <li class="mt-2">Afforadable 💯 ✅</li>
-                <li class="mt-2">Pay in crypto/paypal ☑️ ✅</li>
-              </ul>
-
-              <p class="hint1">
-                <strong>Note:</strong> If you would like to have other types of token implemented on our website, tell
-                us ! 👉🏻
-                <a href="https://forms.gle/z9KsTohsfymsjmcL7">Submit request.</a>
-
-              </p>
-              <a href="https://t.me/TokenGeneratorBSC" class="btn btn-primary my-3" role="button">Contact Us</a>
-            </div>
-          </div>
         </div>
-
-        <div style="display: block;" class="actionGroup">
-          <div class="text-center mt-5">
-            <p style="background-color: greenyellow">
-              FREE
-            </p>
-            <p>* GAS fee will be added to final amount</p>
-            <p>* 3% transaction fees when sell</p>
-          </div>
-          <p>Network * </p>
-          <select class="form-select network" aria-label="Default select example">
-            <option value="0">Binance Smart Chain</option>
-            <!-- <option value="1">Binance Smart Chain - Testnet</option> -->
-          </select>
-          <p class="hint">Choose your network</p>
-          <div role="alert" aria-live="polite" aria-atomic="true" class="alert alert-warning testnetAlert"
-            style="display: none;">
-            <strong>You selected a TEST Network.</strong>
-            <hr>
-            To deploy on Main Network you must select Binance Smart Chain. <br>
-            <a class="hint" href="https://testnet.binance.org/faucet-smart">Get FREE BNB for Testnet</a>
-          </div>
-        </div>
-
-
-        <br>
-        <div class="row">
-          <lottie-player class="loading" src="/static/media/loading.json" background="transparent" speed="2"
-            style="width: 100px; height: 100px; display: none;" loop autoplay>
-          </lottie-player>
-          <p class="hint deployStatus" style="display: none;"></p>
-          <p class="hint alertLoading" style="color: red; display: none;">Please wait a moment and DON'T refresh
-            the page.</p>
-          <p class="hint error" style="color: red; display: none;">Some errors.</p>
-
-          <dl class="tip" style="display: none;">
-            <dt> 💡Tips:</dt>
-            <dd>- try increase the gas limit.</dd>
-            <dd>- <a href="https://t.me/TokenGeneratorBSC">contact us</a> for help</dd>
-          </dl> <br>
-        </div>
-        <div style="display: block;" class="actionGroup">
-          <div class="
-          d-grid
-          gap-2
-          d-md-flex
-          justify-content-md-start
-          row
-          d-flex
-          align-items-center
-          act  
-        ">
-            <button type="button" class="btn btn-primary btn-lg btnCreate col-sm-3">
-              Create
-            </button>
-
-            <div class="my-5" style="color: rgb(103, 112, 243)">
-
-              <h5>Steps:</h5>
-              <ol>
-                <li>Name your token, symbol</li>
-                <li>Choose total supply and other required parameters. If you don't enter these values, the default
-                  values will be used.</li>
-                <li>Click Create. </li>
-                <li>Confirm transaction. </li>
-                <li>Add your new token to wallet.</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </div>
-
-  <div class="d-flex justify-content-center mt-50">
-    <div class="border border-success p-2 my-5" id="success_creation" style="display: none">
-      <p>✅ SUCCESS! Now you can add your token to Metamask!</p>
-      <br />
-      <mark class="col-sm newTokenAddress" style="font-size: small">new_token_address</mark>
-      <button id="copyTokenAddress" class="btn btn-outline-primary copyTokenAddress" title="Copy to clipboard">
-        Copy
-      </button>
-      <br>
-      <br /><br />
-      <p>
-        🔍 View your token on
-        <a id="view_token" href="">BscScan</a>.
-      </p>
-      <p>
-        ☑️ If your token contract isn't verified automatically yet, <a href="https://t.me/TokenGeneratorBSC">contact
-          us.</a>
-      </p>
-      <!-- <button id="verify_contract">verifiy contract</button> -->
-      <p hidden>
-        👉 If you need help adding new token to wallet, check out
-        <a href="https://cryptonews.com/guides/how-to-add-tokens-to-metamask.htm">this article</a>.
-      </p>
-      <p hidden>
-        🔥 How to launch your own tokens ?
-        <a href="#launch">Click here.</a>
-      </p>
-      <p hidden>
-        💰 Want to make some passive income ?
-        <a href="#ref_id">Click here.</a>
-      </p>
-
-      <p hidden>
-        💸 Invest in SafeMoonMaker tokens.
-        <a href="#buy_token">Click here.</a>
-      </p>
     </div>
   </div>
 
   <div class="container px-4 py-0" id="icon-grid">
     <!-- <h2 class="pb-2 border-bottom">🔥Features</h2> -->
 
-    <section class="border-bottom mb-5">
+    <section class="border-bottom mb-5" id="features">
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">🔥Features</h1>
+          <h1 class="display-5">🔥BEP20 token generator features</h1>
           </p>
         </div>
       </div>
@@ -888,7 +140,7 @@
         </svg>
         <div>
           <h4 class="fw-bold mb-0">Be proud</h4>
-          <p>Share your own tokens with your family, friends and the world</p>
+          <p>Share your tokens with your family, friends and the world</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
@@ -901,7 +153,7 @@
         <div>
           <h4 class="fw-bold mb-0">Safe</h4>
           <p>
-            No questions asked refund if you don't receive your own tokens
+            No questions asked refund if you don't receive your tokens
           </p>
         </div>
       </div>
@@ -909,12 +161,12 @@
   </div>
 
   <div class="container">
-    <section class="border-bottom border-primary">
+    <section class="border-bottom">
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4 text-primary">What Others Say About Us ⭐ ⭐ ⭐ ⭐ ⭐</h1>
-          <p class="lead"> We are passionate smart contract programmers
-            <br> who want to make token creation easy &amp; acessible for everyone.
+          <h1 class="display-5">🌟 We are passionate smart contract developers</h1>
+          <p class="lead">
+            <br> We do solidity development and develop smart contracts.
           </p>
         </div>
       </div>
@@ -1065,8 +317,9 @@
       <section class="border-bottom mb-5">
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
-            <h1 class="display-4">FAQ</h1>
-            <p class="lead"> Find the answers for the most frequently asked questions below
+            <h1 class="display-5">The most frequently asked questions when using BEP20 token generator</h1>
+            <p class="lead">
+
             </p>
           </div>
         </div>
@@ -1075,21 +328,34 @@
 
       <div class="row">
         <div class="col-md-6 col-lg-4 mb-4">
-          <h6 class="mb-3 "><i class="far fa-paper-plane text-primary pe-2"></i>Can I add more functions?</h6>
+          <h6 class="mb-3 "><i class="fas fa-ribbon text-primary pe-2"></i>How do I generate BEP20 token for free?
+          </h6>
+          <p>
+            In order to create BEP20 token for free, open our <a href="/bep20-token-generator">BEP20 token
+              generator</a> and
+            follow instructions.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4">
+          <h6 class="mb-3 "><i class="fas fa-puzzle-piece text-primary pe-2"></i>Can I add more functions to smart
+            contract?</h6>
           <p>
             Of course! Contact us to discuss your project.
           </p>
         </div>
 
         <div class="col-md-6 col-lg-4 mb-4">
-          <h6 class="mb-3 "><i class="fas fa-pen-alt text-primary pe-2"></i> Can you make other tokens/contracts ?</h6>
+          <h6 class="mb-3 "><i class="fas fa-laptop-code text-primary pe-2"></i> Can you make other tokens or develop
+            smart contracts ?
+          </h6>
           <p>
-            Sure, we can make different types of tokens/contracts to suit your needs.
+            Sure, we can make different types of tokens and develop smart contracts to suit your needs.
           </p>
         </div>
 
         <div class="col-md-6 col-lg-4 mb-4">
-          <h6 class="mb-3 "><i class="fas fa-user text-primary pe-2"></i> Can I have source code of contract ?
+          <h6 class="mb-3 "><i class="fas fa-code text-primary pe-2"></i> Can I have source code of contract ?
           </h6>
           <p>
             Yes, it will be available on BscScan after deployment.
@@ -1097,7 +363,7 @@
         </div>
 
         <div class="col-md-6 col-lg-4 mb-4">
-          <h6 class="mb-3"><i class="fas fa-rocket text-primary pe-2"></i> Can I add more wallets ?
+          <h6 class="mb-3"><i class="fas fa-user-plus text-primary pe-2"></i> Can I add more wallets ?
           </h6>
           <p>
             Absolutely. For this you need to contact us.
@@ -1300,61 +566,115 @@
     </div>
   </div>
 
-  <footer class="bg-light text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0" style="display: block">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Telegram -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39"
-          href="https://t.me/TokenGeneratorBSC" role="button"><i class="fab fa-google"></i>Telegram</a>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted mt-5">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us:</span>
 
-        <!-- Facebook -->
-        <a hidden class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
-          href="https://t.me/TokenGeneratorBSC" role="button"><i class="fab fa-facebook-f"></i>Support</a>
+      </div>
 
-        <!-- Twitter -->
-        <!-- <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #55acee"
-            href="#!"
-            role="button"
-            ><i class="fab fa-twitter"></i
-          ></a> -->
+      <!-- Left -->
 
-        <!-- Instagram -->
-        <!-- <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #ac2bac"
-            href="#!"
-            role="button"
-            ><i class="fab fa-instagram"></i
-          ></a> -->
+      <!-- Right -->
+      <div>
+        <a href="https://t.me/TokenGeneratorBSC" class="me-4" target="_blank" onclick="gtag('event','telegram')">
+          <i class="fab fa-telegram fa-2x"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCJr5ccy7p33qt4Yy-rLKEfg" target="_blank" style="color: red;"
+          onclick="gtag('event','youtube')">
+          <i class="fab fa-youtube fa-2x"></i>
+        </a>
 
-        <!-- Linkedin -->
-        <!-- <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #0082ca"
-            href="#!"
-            role="button"
-            ><i class="fab fa-linkedin-in"></i
-          ></a> -->
-        <!-- Github -->
-        <!-- <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #333333"
-            href="#!"
-            role="button"
-            ><i class="fab fa-github"></i
-          ></a> -->
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>SafeMoon Maker
+            </h6>
+            <p>
+              Our mission is to make token creation easy and accessible for everyone.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Tools
+            </h6>
+            <p>
+              <a href="/bep20-token-generator" target="_blank" class="text-reset">BEP20 token generator</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="https://t.me/TokenGeneratorBSC" target="_blank" class="text-reset">Telegram</a>
+            </p>
+            <p>
+              <a href="https://www.youtube.com/channel/UCJr5ccy7p33qt4Yy-rLKEfg" target="_blank"
+                class="text-reset">Youtube</a>
+            </p>
+            <!-- <p>
+              <a href="#!" class="text-reset">Blogs</a>
+            </p> -->
+            <p>
+              <a href="https://forms.gle/mZjhovdVTizCwRSB8" class="text-reset" target="_blank"> Feedback</a>
+            </p>
+            <p>
+              <a href="https://t.me/TokenGeneratorBSC" class="text-reset" target="_blank">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+
+
+            <h6 class="text-uppercase fw-bold mb-4">
+              Services
+            </h6>
+            <p>
+              <a href="https://t.me/TokenGeneratorBSC" class="text-reset" target="_blank">Smart contract development</a>
+            </p>
+            <!-- <p><i class="fas fa-home me-3"></i> Safemoon Maker</p> -->
+            <!-- <p>
+              <i class="fas fa-envelope me-3"></i>
+
+            </p> -->
+
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(17, 0, 255, 0.2)">
-      © 2021 Copyright:
+      © 2021-2022 Copyright:
       <a class="text-white" href="https://safemoonmaker.github.io">SafeMoonMaker</a>
     </div>
     <!-- Copyright -->
@@ -1368,7 +688,6 @@
   </script>
 
   <script type="module" src="/static/parameters.js"></script>
-  <script src="/static/connect_wallet.js"></script>
   <script src="/static/referral.js"></script>
   <script src="/static/countdown.js"></script>
   <!-- <script src="/static/buyToken.js"></script> -->
