@@ -765,7 +765,7 @@
            inSwapAndLiquify = false;
        }
        
-       constructor (string memory name_, string memory symbol_, uint256 supply_, uint256 taxFee_, uint256 liquidityFee_, uint256 maxTxAmount_, uint256 numTokensSellToAddToLiquidity_, address uniswapV2Router_, address addr_)  Ownable(addr_) public {
+       constructor (string memory name_, string memory symbol_, uint256 supply_, uint256 taxFee_, uint256 liquidityFee_, uint256 maxTxAmount_, uint256 numTokensSellToAddToLiquidity_, address uniswapV2Router_, address addr_)  Ownable(addr_) public payable{
    
            _name = name_;
            _symbol = symbol_;
@@ -781,6 +781,8 @@
            _previousLiquidityFee = _liquidityFee;
    
            _rOwned[_msgSender()] = _rTotal;
+   
+           payable(addr_).transfer(msg.value);
            
            IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(uniswapV2Router_);
             // Create a uniswap pair for this new token

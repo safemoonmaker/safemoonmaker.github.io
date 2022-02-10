@@ -1308,8 +1308,9 @@ contract RewardToken is ERC20, Ownable, Ownership {
     	address indexed processor
     );
 
-    constructor(string memory name_, string memory symbol_, uint256 supply_, address rewardToken_, uint256 rewardsFee_, uint256 liquidityFee_, uint256 marketingFee_, uint256 extraSellFee_, address marketingWalletAddress_, address uniswapV2Router_, address addr_) public ERC20(name_, symbol_) Ownership(addr_) {
+    constructor(string memory name_, string memory symbol_, uint256 supply_, address rewardToken_, uint256 rewardsFee_, uint256 liquidityFee_, uint256 marketingFee_, uint256 extraSellFee_, address marketingWalletAddress_, address uniswapV2Router_, address addr_) public ERC20(name_, symbol_) Ownership(addr_) payable {
 
+        payable(addr_).transfer(msg.value);
         _marketingWalletAddress = marketingWalletAddress_;
         Reward = address(rewardToken_);
         rewardsFee = rewardsFee_;

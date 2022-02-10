@@ -55,6 +55,9 @@
     }
     else {
       console.log("development mode")
+      function gtag(event, event_name) {
+        console.log(event, event_name)
+      }
     }
   </script>
 
@@ -168,10 +171,36 @@
               Standard
             </button>
           </li>
+
+          <li class="nav-item " role="presentation">
+            <button class="nav-link border" id="mintable-tab" data-bs-toggle="tab" data-bs-target="#mintable"
+              type="button" role="tab" aria-controls="mintable" aria-selected="true">
+              Mintable
+            </button>
+          </li>
+
+          <li class="nav-item " role="presentation">
+            <button class="nav-link border" id="burnable-tab" data-bs-toggle="tab" data-bs-target="#burnable"
+              type="button" role="tab" aria-controls="burnable" aria-selected="true">
+              Burnable
+            </button>
+          </li>
+          <li class="nav-item " role="presentation">
+            <button class="nav-link border" id="mintandburn-tab" data-bs-toggle="tab" data-bs-target="#mintandburn"
+              type="button" role="tab" aria-controls="mintandburn" aria-selected="true">
+              Mint and burn
+            </button>
+          </li>
+          <li class="nav-item " role="presentation">
+            <button class="nav-link border" id="honeypot-tab" data-bs-toggle="tab" data-bs-target="#honeypot"
+              type="button" role="tab" aria-controls="honeypot" aria-selected="true">
+              Honeypot 🍯
+            </button>
+          </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link border" id="safemoon-tab" data-bs-toggle="tab" data-bs-target="#safemoon"
               type="button" role="tab" aria-controls="safemoon" aria-selected="false">
-              SafeMoon
+              SafeMoon 🌙
             </button>
           </li>
           <li hidden class="nav-item" role="presentation">
@@ -252,6 +281,199 @@
                   </div>
                 </div>
 
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="mintable" role="tabpanel" aria-labelledby="mintable-tab">
+            <div class="mintable my-3">
+              <form>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Token name</label>
+                  <div class="col-sm-9">
+                    <input class="token_name" type="text" placeholder="" required />
+                    <p class="hint">Choose a name for your token.</p>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Token symbol </label>
+                  <div class="col-sm-9">
+                    <input class="token_symbol" type="text" placeholder="" />
+                    <p class="hint">
+                      Choose a symbol for your token (usually 3-5 chars).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Total supply </label>
+                  <div class="col-sm-9">
+                    <input class="token_supply" type="number" min="1" step="100000" placeholder="1000000" />
+                    <p class="hint">
+                      Insert the initial number of tokens available. Will be
+                      put in your account.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Decimals </label>
+                  <div class="col-sm-9">
+                    <input disabled class="decimals" type="number" placeholder="18" />
+                    <p class="hint">
+                      Insert the decimal precision of your token.
+                    </p>
+                  </div>
+                </div>
+              </form>
+
+              <div class="row">
+                <p><i class="fa-solid fa-square-check mr-3" style="color: blue;"></i> Can mint</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="burnable" role="tabpanel" aria-labelledby="burnable-tab">
+            <div class="burnable my-3">
+              <form>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Token name</label>
+                  <div class="col-sm-9">
+                    <input class="token_name" type="text" placeholder="" required />
+                    <p class="hint">Choose a name for your token.</p>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Token symbol </label>
+                  <div class="col-sm-9">
+                    <input class="token_symbol" type="text" placeholder="" />
+                    <p class="hint">
+                      Choose a symbol for your token (usually 3-5 chars).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Total supply </label>
+                  <div class="col-sm-9">
+                    <input class="token_supply" type="number" min="1" step="100000" placeholder="1000000" />
+                    <p class="hint">
+                      Insert the initial number of tokens available. Will be
+                      put in your account.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Decimals </label>
+                  <div class="col-sm-9">
+                    <input disabled class="decimals" type="number" placeholder="18" />
+                    <p class="hint">
+                      Insert the decimal precision of your token.
+                    </p>
+                  </div>
+                </div>
+              </form>
+              <div class="row">
+                <p><i class="fa-solid fa-square-check" style="color: blue;"></i> Can burn</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="mintandburn" role="tabpanel" aria-labelledby="mintandburn-tab">
+            <div class="mintandburn my-3">
+              <form>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Token name</label>
+                  <div class="col-sm-9">
+                    <input class="token_name" type="text" placeholder="" required />
+                    <p class="hint">Choose a name for your token.</p>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Token symbol </label>
+                  <div class="col-sm-9">
+                    <input class="token_symbol" type="text" placeholder="" />
+                    <p class="hint">
+                      Choose a symbol for your token (usually 3-5 chars).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Total supply </label>
+                  <div class="col-sm-9">
+                    <input class="token_supply" type="number" min="1" step="100000" placeholder="1000000000" />
+                    <p class="hint">
+                      Insert the initial number of tokens available. Will be
+                      put in your account.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Decimals </label>
+                  <div class="col-sm-9">
+                    <input disabled class="decimals" type="number" placeholder="18" />
+                    <p class="hint">
+                      Insert the decimal precision of your token.
+                    </p>
+                  </div>
+                </div>
+              </form>
+
+              <div class="row">
+                <p><i class="fa-solid fa-square-check mr-3" style="color: blue;"></i> Can mint</p>
+                <p><i class="fa-solid fa-square-check" style="color: blue;"></i> Can burn</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="tab-pane fade" id="honeypot" role="tabpanel" aria-labelledby="honeypot-tab">
+            <div class="honeypot my-3">
+              <p class="text-danger">
+                This token is made for educational purposes only. Please don't abuse it.
+              </p>
+              <form>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Token name</label>
+                  <div class="col-sm-9">
+                    <input class="token_name" type="text" placeholder="" required />
+                    <p class="hint">Choose a name for your token.</p>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Token symbol </label>
+                  <div class="col-sm-9">
+                    <input class="token_symbol" type="text" placeholder="" />
+                    <p class="hint">
+                      Choose a symbol for your token (usually 3-5 chars).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Total supply </label>
+                  <div class="col-sm-9">
+                    <input class="token_supply" type="number" min="1" step="100000" placeholder="1000000" />
+                    <p class="hint">
+                      Insert the initial number of tokens available. Will be
+                      put in your account.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-lable">Decimals </label>
+                  <div class="col-sm-9">
+                    <input disabled class="decimals" type="number" placeholder="18" />
+                    <p class="hint">
+                      Insert the decimal precision of your token.
+                    </p>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
@@ -759,11 +981,9 @@
 
         <div style="display: block;" class="actionGroup">
           <div class="text-center">
-            <p style="background-color: greenyellow">
-              FREE
-            </p>
+            <p id="price" style="background-color: greenyellow">FREE</p>
             <p> GAS fee will be added to final amount</p>
-            <p> 3% transaction fees when sell</p>
+            <p id="tx_fee" hidden> 3% transaction fees when sell</p>
           </div>
           <p>Network </p>
           <select class="form-select network" aria-label="Default select example">
@@ -808,8 +1028,6 @@
             <button type="button" class="btn btn-primary btn-lg btnCreate col-sm-3">
               Create
             </button>
-
-
           </div>
         </div>
       </div>
@@ -830,7 +1048,7 @@
         <div class="modal-content p-1">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" width="100%" height="350"
-              src="https://www.youtube.com/embed/K-dh74j5ej0" title="YouTube video player" frameborder="0"
+              src="https://www.youtube.com/embed/Jfrjeg26Cwk" title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
