@@ -569,3 +569,25 @@ section {
     display: block;
   }
 }
+
+/* icons */
+.fab {
+  color: gainsboro;
+}
+
+.icon {
+  text-decoration: none;
+}
+
+.fa-telegram:hover {
+  color: #2aabee;
+}
+
+.fa-youtube:hover {
+  color: #ff0000;
+}
+
+/* footer links */
+p a:hover {
+  background-color: greenyellow;
+}

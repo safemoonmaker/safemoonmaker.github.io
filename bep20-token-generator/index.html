@@ -28,7 +28,7 @@
   <script src="/lib/bignumber.js"></script>
 
 
-  <link rel="stylesheet" href="static/styles.css" />
+  <link rel="stylesheet" href="../static/styles.css" />
   <meta name="description"
     content="Create a BEP20 Token in less than a minute with the new Smart Contract Generator for Binance Smart Chain. No login. No setup. No coding required." />
   <meta property="twitter:title" content="Create BEP20 Token for FREE on Binance Smart Chain | BEP20 Token Generator" />
@@ -191,7 +191,7 @@
               Mint and burn
             </button>
           </li>
-          <li class="nav-item" hidden role="presentation">
+          <li hidden class="nav-item " role="presentation">
             <button class="nav-link border" id="honeypot-tab" data-bs-toggle="tab" data-bs-target="#honeypot"
               type="button" role="tab" aria-controls="honeypot" aria-selected="true">
               Honeypot 🍯
@@ -201,6 +201,12 @@
             <button class="nav-link border" id="safemoon-tab" data-bs-toggle="tab" data-bs-target="#safemoon"
               type="button" role="tab" aria-controls="safemoon" aria-selected="false">
               SafeMoon 🌙
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link border" id="deflationary-tab" data-bs-toggle="tab" data-bs-target="#safemoon"
+              type="button" role="tab" aria-controls="deflationary" aria-selected="false">
+              Deflationary
             </button>
           </li>
           <li hidden class="nav-item" role="presentation">
@@ -233,7 +239,7 @@
           <li class="nav-item" role="presentation">
             <button class="nav-link border" id="customized-tab" data-bs-toggle="tab" data-bs-target="#customized"
               type="button" role="tab" aria-controls="customized" aria-selected="false">
-              Customized Token <span class="badge bg-info"><i class="fab fa-telegram"></i></span>
+              Customized Token <i class="fab fa-telegram"></i>
             </button>
           </li>
         </ul>
@@ -1040,7 +1046,7 @@
     <!-- Large modal -->
     <button id="btnModal" type="button" class="btn" style="background-color:transparent" data-toggle="modal"
       data-target=".bd-example-modal-lg">
-      <i class="fab fa-youtube fa-3x" style="color: grey;"></i></button>
+      <i class="fab fa-youtube fa-3x"></i></button>
 
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
       aria-hidden="true">
@@ -1225,25 +1231,115 @@
       </div>
     </div>
 
-    <footer class="bg-light text-center text-white">
-      <!-- Grid container -->
-      <div class="container p-4 pb-0" style="display: block">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Telegram -->
-          <p class="d-flex justify-content-around align-items-center">
-            <a href="https://t.me/TokenGeneratorBSC" onclick="gtag('event','telegram')" target="_blank">
-              <i class="fab fa-telegram fa-3x"></i></a>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted mt-5">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us:</span>
 
-            <a hidden href="#buy_token" class="buy_now" style="color:red"> <strong>🔥PRESALE</strong> </a>
-            <a hidden href="" class="buy_now"><img src="/static/media/stone.png" alt="" height="35">$10.25</a>
-          </p>
+        </div>
+
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="https://t.me/TokenGeneratorBSC" class="icon me-4" target="_blank" onclick="gtag('event','telegram')">
+            <i class="fab fa-telegram fa-2x red"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCJr5ccy7p33qt4Yy-rLKEfg" class="icon" target="_blank"
+            onclick="gtag('event','youtube')">
+            <i class="fab fa-youtube fa-2x"></i>
+          </a>
+
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>SafeMoon Maker
+              </h6>
+              <p>
+                Our mission is to make token creation easy and accessible for everyone.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Tools
+              </h6>
+              <p>
+                <a href="/bep20-token-generator" target="_blank" class="text-reset">BEP20 token generator</a>
+              </p>
+              <p>
+                <a href="/bep20-wallet-generator" target="_blank" class="text-reset">BEP20 wallet generator</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="https://t.me/TokenGeneratorBSC" target="_blank" class="text-reset">Telegram</a>
+              </p>
+              <p>
+                <a href="https://www.youtube.com/channel/UCJr5ccy7p33qt4Yy-rLKEfg" target="_blank"
+                  class="text-reset">Youtube</a>
+              </p>
+              <!-- <p>
+                <a href="#!" class="text-reset">Blogs</a>
+              </p> -->
+              <p>
+                <a href="https://forms.gle/mZjhovdVTizCwRSB8" class="text-reset" target="_blank"> Feedback</a>
+              </p>
+              <p>
+                <a href="https://t.me/TokenGeneratorBSC" class="text-reset" target="_blank">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
 
 
-        </section>
-        <!-- Section: Social media -->
-      </div>
-      <!-- Grid container -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Services
+              </h6>
+              <p>
+                <a href="https://t.me/TokenGeneratorBSC" class="text-reset" target="_blank">Smart contract
+                  development</a>
+              </p>
+              <!-- <p><i class="fas fa-home me-3"></i> Safemoon Maker</p> -->
+              <!-- <p>
+                <i class="fas fa-envelope me-3"></i>
+  
+              </p> -->
+
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(17, 0, 255, 0.2)">
@@ -1281,6 +1377,10 @@
     <!-- <script src="/static/buyToken.js"></script> -->
 
     <!-- Include this in your HTML page -->
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25571645.js"></script>
+    <!-- End of HubSpot Embed Code -->
 </body>
 
 </html>
