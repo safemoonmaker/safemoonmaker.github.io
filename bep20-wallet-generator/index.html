@@ -51,6 +51,22 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="../static/styles.css" />
+  <meta name="google-site-verification" content="ao9hS7yDUw-d4m80i6qtmkMRx7pAaSxWapAfEZ-dpqY" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7KB79ESXBB"></script>
+  <script>
+    if (!window.location.toString().includes("127.0.0.1") && !window.location.toString().includes("localhost") && !window.location.toString().includes("192.168.")) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-7KB79ESXBB');
+    } else {
+      console.log("development mode")
+      function gtag(event, event_name) {
+        console.log(event, event_name)
+      }
+    }
+  </script>
 </head>
 
 <body>
