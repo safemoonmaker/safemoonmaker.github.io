@@ -162,19 +162,14 @@
         <h1 class="display-5 fw-bold lh-1 mb-3 mt-2">
           Create your BEP20 token
         </h1>
-        <p class="lead">No coding required. Contract verified. Unlimited supply.</p>
+        <p class="lead">Simple. No coding required.</p>
 
         <ul class="nav nav-pills justify-content-start" id="myTab" role="tablist">
 
+
           <li class="nav-item " role="presentation">
-            <button class="nav-link border active" id="awesomeToken-tab" data-bs-toggle="tab"
-              data-bs-target="#awesomeToken" type="button" role="tab" aria-selected="true">
-              Awesome Token
-            </button>
-          </li>
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border" id="basic-tab" data-bs-toggle="tab" data-bs-target="#basic" type="button"
-              role="tab" aria-controls="basic" aria-selected="true">
+            <button class="nav-link border active" id="basic-tab" data-bs-toggle="tab" data-bs-target="#basic"
+              type="button" role="tab" aria-controls="basic" aria-selected="true">
               Standard
             </button>
           </li>
@@ -218,6 +213,13 @@
             <button class="nav-link border" id="memeCoin-tab" data-bs-toggle="tab" data-bs-target="#basic" type="button"
               role="tab" aria-controls="basic" aria-selected="true">
               Meme Coin
+            </button>
+          </li>
+
+          <li class="nav-item " role="presentation">
+            <button class="nav-link border" id="awesomeToken-tab" data-bs-toggle="tab" data-bs-target="#awesomeToken"
+              type="button" role="tab" aria-selected="true">
+              Awesome Token
             </button>
           </li>
 
@@ -445,7 +447,7 @@
 
 
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade" id="basic" role="tabpanel" aria-labelledby="home-tab">
+          <div class="tab-pane fade show active" id="basic" role="tabpanel" aria-labelledby="home-tab">
             <div class="basicToken my-3">
               <form>
                 <div class="form-group row">
@@ -1139,7 +1141,7 @@
             </div>
           </div>
 
-          <div class="tab-pane fade show active" id="awesomeToken" role="tabpanel" aria-labelledby="awesomeToken-tab">
+          <div class="tab-pane fade" id="awesomeToken" role="tabpanel" aria-labelledby="awesomeToken-tab">
             <div class="awesomeToken my-3">
               <form>
                 <div class="form-group row">
@@ -1182,7 +1184,7 @@
                 </div>
               </form>
 
-              <div class="row">
+              <!-- <div class="row">
                 <p><i class="fa-solid fa-square-check mr-3" style="color: blue;"></i> Can mint</p>
                 <p><i class="fa-solid fa-square-check" style="color: blue;"></i> Can burn</p>
                 <p><i class="fa-solid fa-square-check" style="color: blue;"></i> Can recover</p>
@@ -1190,7 +1192,7 @@
                 <p><i class="fa-solid fa-square-check" style="color: blue;"></i> Ownable</p>
                 <p><i class="fa-solid fa-square-check" style="color: blue;"></i> Unlimited supply</p>
                 <p><i class="fa-solid fa-square-check" style="color: blue;"></i> Flexible decimals</p>
-              </div>
+              </div> -->
 
             </div>
           </div>
@@ -1335,7 +1337,7 @@
             👈
           </p>
           <div class="text-center">
-            <p id="price" style="background-color: greenyellow">3 BNB</p>
+            <p id="price" style="background-color: greenyellow">0.1 BNB</p>
             <p> GAS fee will be added to final amount</p>
             <p id="tx_fee" hidden> 3% transaction fees when sell</p>
           </div>
