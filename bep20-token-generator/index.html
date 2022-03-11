@@ -29,6 +29,8 @@
 
 
   <link rel="stylesheet" href="../static/styles.css" />
+  <link rel="stylesheet" href="./static/styles.css" />
+
   <meta name="description"
     content="Create a BEP20 Token in less than a minute with the new Smart Contract Generator for Binance Smart Chain. No login. No setup. No coding required." />
   <meta property="twitter:title" content="Create BEP20 Token for FREE on Binance Smart Chain | BEP20 Token Generator" />
@@ -170,7 +172,7 @@
           <li class="nav-item " role="presentation">
             <button class="nav-link border active" id="basic-tab" data-bs-toggle="tab" data-bs-target="#basic"
               type="button" role="tab" aria-controls="basic" aria-selected="true">
-              Standard
+              Standard <span class="badge bg-primary">Free</span>
             </button>
           </li>
 
@@ -185,7 +187,7 @@
             <button class="nav-link border" id="burnable-tab" data-bs-toggle="tab" data-bs-target="#burnable"
               type="button" role="tab" aria-controls="burnable" aria-selected="true">
               Burnable
-              <!-- <span class="badge bg-primary">Free</span> -->
+
             </button>
           </li>
           <li class="nav-item " role="presentation">
@@ -280,145 +282,182 @@
             </button>
           </li>
 
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="deadOwner-tab" data-bs-toggle="tab" data-bs-target="#customized"
-              type="button" role="tab" aria-selected="true">
-              0x0 Owner
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="safemoonV2-tab" data-bs-toggle="tab" data-bs-target="#customized"
-              type="button" role="tab" aria-selected="true">
-              SafeMoon v2
-            </button>
-          </li>
-
-          <li class="nav-item" role="presentation">
-            <button class="nav-link border offer" id="safemoonKiller-tab" data-bs-toggle="tab"
-              data-bs-target="#customized" type="button" role="tab" aria-selected="false">
-              SafeMoon Killer
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="antiSniper-tab" data-bs-toggle="tab" data-bs-target="#customized"
-              type="button" role="tab" aria-selected="true">
-              Sniper's Nightmare
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="antiRug-tab" data-bs-toggle="tab" data-bs-target="#customized"
-              type="button" role="tab" aria-selected="true">
-              Anti-Rug System
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="overflow-tab" data-bs-toggle="tab" data-bs-target="#customized"
-              type="button" role="tab" aria-selected="true">
-              Overflow
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="charityToken-tab" data-bs-toggle="tab"
-              data-bs-target="#customized" type="button" role="tab" aria-selected="true">
-              Charity Token
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="staking-tab" data-bs-toggle="tab" data-bs-target="#customized"
-              type="button" role="tab" aria-selected="true">
-              Staking
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="nativeReward-tab" data-bs-toggle="tab"
-              data-bs-target="#customized" type="button" role="tab" aria-selected="true">
-              Native Reward
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="unlimitedWallets-tab" data-bs-toggle="tab"
-              data-bs-target="#customized" type="button" role="tab" aria-selected="true">
-              Unlimited Wallets
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="hyperinflation-tab" data-bs-toggle="tab"
-              data-bs-target="#customized" type="button" role="tab" aria-selected="true">
-              Hyperinflation
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="hyperDeflation-tab" data-bs-toggle="tab"
-              data-bs-target="#customized" type="button" role="tab" aria-selected="true">
-              Hyper deflation
-            </button>
-          </li>
-
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="nftGame-tab" data-bs-toggle="tab" data-bs-target="#customized"
-              type="button" role="tab" aria-selected="true">
-              NFT Game
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="dex-tab" data-bs-toggle="tab" data-bs-target="#customized"
-              type="button" role="tab" aria-selected="true">
-              DEX
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="builtinPresale-tab" data-bs-toggle="tab"
-              data-bs-target="#customized" type="button" role="tab" aria-selected="true">
-              Built-in Presale
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="dao-tab" data-bs-toggle="tab" data-bs-target="#customized"
-              type="button" role="tab" aria-selected="true">
-              DAO
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="stableCoin-tab" data-bs-toggle="tab" data-bs-target="#customized"
-              type="button" role="tab" aria-controls="basic" aria-selected="true">
-              Stable Coin
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="doubleRewards-tab" data-bs-toggle="tab"
-              data-bs-target="#customized" type="button" role="tab" aria-selected="true">
-              Double Rewards
-            </button>
-          </li>
-
-          <li class="nav-item " role="presentation">
-            <button class="nav-link border offer" id="trippleRewards-tab" data-bs-toggle="tab"
-              data-bs-target="#customized" type="button" role="tab" aria-selected="true">
-              Triple Rewards
-            </button>
-          </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link border" id="customized-tab" data-bs-toggle="tab" data-bs-target="#customized"
               type="button" role="tab" aria-controls="customized" aria-selected="false">
               Customized Token <i class="fab fa-telegram"></i>
             </button>
           </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link border" id="moonshots" data-bs-toggle="tab" data-bs-target="#customized"
+              type="button" role="tab" aria-controls="customized" aria-selected="false">
+              Moonshots <i class=" fa-solid fa-angles-down toggle" style="color: greenyellow;"></i>
+            </button>
+          </li>
+
+          <script>
+            $("#moonshots").on("click", function () {
+              $(".actionGroup").css("display", "none");
+              if ($(".moonshotOffers").css("display") == "none") {
+                $(".toggle").removeClass("fa-angles-down");
+                $(".toggle").addClass("fa-angles-up");
+
+                $(".moonshotOffers").css("display", "block");
+
+              } else {
+                closeMoonshots();
+              }
+            })
+
+            function closeMoonshots() {
+              $(".toggle").addClass("fa-angles-down");
+              $(".toggle").removeClass("fa-angles-up");
+              $(".moonshotOffers").css("display", "none");
+            }
+          </script>
+
+          <div class="border border-primary moonshotOffers" style="display: none;">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link border offer" id="deadOwner-tab" data-bs-toggle="tab" data-bs-target="#customized"
+                type="button" role="tab" aria-selected="true">
+                0x0 Owner
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="safemoonV2-tab" data-bs-toggle="tab"
+                data-bs-target="#customized" type="button" role="tab" aria-selected="true">
+                SafeMoon v2
+              </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link border offer" id="safemoonKiller-tab" data-bs-toggle="tab"
+                data-bs-target="#customized" type="button" role="tab" aria-selected="false">
+                SafeMoon Killer
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="antiSniper-tab" data-bs-toggle="tab"
+                data-bs-target="#customized" type="button" role="tab" aria-selected="true">
+                Sniper's Nightmare
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="antiRug-tab" data-bs-toggle="tab" data-bs-target="#customized"
+                type="button" role="tab" aria-selected="true">
+                Anti-Rug System
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="overflow-tab" data-bs-toggle="tab" data-bs-target="#customized"
+                type="button" role="tab" aria-selected="true">
+                Overflow
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="charityToken-tab" data-bs-toggle="tab"
+                data-bs-target="#customized" type="button" role="tab" aria-selected="true">
+                Charity Token
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="staking-tab" data-bs-toggle="tab" data-bs-target="#customized"
+                type="button" role="tab" aria-selected="true">
+                Staking
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="nativeReward-tab" data-bs-toggle="tab"
+                data-bs-target="#customized" type="button" role="tab" aria-selected="true">
+                Native Reward
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="unlimitedWallets-tab" data-bs-toggle="tab"
+                data-bs-target="#customized" type="button" role="tab" aria-selected="true">
+                Unlimited Wallets
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="hyperinflation-tab" data-bs-toggle="tab"
+                data-bs-target="#customized" type="button" role="tab" aria-selected="true">
+                Hyperinflation
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="hyperDeflation-tab" data-bs-toggle="tab"
+                data-bs-target="#customized" type="button" role="tab" aria-selected="true">
+                Hyper deflation
+              </button>
+            </li>
+
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="nftGame-tab" data-bs-toggle="tab" data-bs-target="#customized"
+                type="button" role="tab" aria-selected="true">
+                NFT Game
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="dex-tab" data-bs-toggle="tab" data-bs-target="#customized"
+                type="button" role="tab" aria-selected="true">
+                DEX
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="builtinPresale-tab" data-bs-toggle="tab"
+                data-bs-target="#customized" type="button" role="tab" aria-selected="true">
+                Built-in Presale
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="dao-tab" data-bs-toggle="tab" data-bs-target="#customized"
+                type="button" role="tab" aria-selected="true">
+                DAO
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="stableCoin-tab" data-bs-toggle="tab"
+                data-bs-target="#customized" type="button" role="tab" aria-controls="basic" aria-selected="true">
+                Stable Coin
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="doubleRewards-tab" data-bs-toggle="tab"
+                data-bs-target="#customized" type="button" role="tab" aria-selected="true">
+                Double Rewards
+              </button>
+            </li>
+
+            <li class="nav-item " role="presentation">
+              <button class="nav-link border offer" id="trippleRewards-tab" data-bs-toggle="tab"
+                data-bs-target="#customized" type="button" role="tab" aria-selected="true">
+                Triple Rewards
+              </button>
+            </li>
+          </div>
+
+
+
+
+
+
         </ul>
 
         <button hidden type="button" class="btn btn-primary" data-toggle="modal" data-target="#tokenIntroDialog"
@@ -1337,7 +1376,7 @@
             👈
           </p>
           <div class="text-center">
-            <p id="price" style="background-color: greenyellow">0.1 BNB</p>
+            <p id="price" style="background-color: greenyellow">FREE</p>
             <p> GAS fee will be added to final amount</p>
             <p id="tx_fee" hidden> 3% transaction fees when sell</p>
           </div>
